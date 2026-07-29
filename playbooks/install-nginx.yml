@@ -1,0 +1,17 @@
+---
+- name: Installer et démarrer Nginx
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Installer nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+        update_cache: true
+
+    - name: Démarrer nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true

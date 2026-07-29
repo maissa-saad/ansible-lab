@@ -1,0 +1,8 @@
+---
+- name: Test de connexion aux serveurs web
+  hosts: web
+  become: false
+
+  tasks:
+    - name: Vérifier que les machines répondent
+      ansible.builtin.ping:
