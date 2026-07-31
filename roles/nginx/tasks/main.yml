@@ -10,3 +10,11 @@
     name: nginx
     state: started
     enabled: yes
+- name: Déployer la page d'accueil
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+    mode: "0644"
+  notify: Redémarrer nginx

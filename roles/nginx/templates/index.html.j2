@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mon serveur Ansible</title>
+</head>
+<body>
+    <h1>{{ page_title }}</h1>
+
+    <p>Ce serveur est configuré automatiquement par Ansible.</p>
+
+    <p>Nom de la machine : {{ inventory_hostname }}</p>
+
+    <p>Utilisateur : {{ ansible_user }}</p>
+</body>
+</html>
