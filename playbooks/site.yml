@@ -1,0 +1,7 @@
+---
+- name: Configuration des serveurs web
+  hosts: web
+  become: yes
+
+  roles:
+    - nginx
