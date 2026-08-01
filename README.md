@@ -27,5 +27,3 @@ Projet d'apprentissage Ansible pour automatiser la configuration de serveurs Lin
 - Communication : SSH avec clé publique
 
 ## Structure
-
-
